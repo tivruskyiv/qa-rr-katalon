@@ -4,7 +4,7 @@
 
 1. Download the most recent version of Katalon ([here](https://www.katalon.com/download/)).
 2. Launch Katalon and open the RaceRoster Katalon Project you pull down from this repo.
-3. Run the "Register" test case.
+3. Open the 'Register' Test Case and run it in Chrome using the dropdown in the upper right hand corner of the Test Case screen.
 
 ### Bonus ###
 
