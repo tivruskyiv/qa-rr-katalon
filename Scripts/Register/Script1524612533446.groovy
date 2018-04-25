@@ -18,6 +18,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('https://raceroster.com/events/2018/12356/the-event-director-classic-2020')
 
@@ -55,9 +56,45 @@ WebUI.clearText(findTestObject('Page_Register for The Event Directo/input_regist
 
 WebUI.sendKeys(findTestObject('Page_Register for The Event Directo/input_registrant_manage_1-7953'), 'No')
 
+WebUI.sendKeys(findTestObject('Page_Register for The Event Directo/dob'), '11111990')
+
 WebUI.selectOptionByLabel(findTestObject('Page_Register for The Event Directo/select_Sex'), 'Female', false)
 
 WebUI.selectOptionByLabel(findTestObject('Page_Register for The Event Directo/select_Swag'), 'L', false)
 
 WebUI.selectOptionByLabel(findTestObject('Page_Register for The Event Directo/select_Select quantity'), '3', false)
+
+WebUI.click(findTestObject('button_Continue'))
+
+WebUI.click(findTestObject('input_accept_waiver18783'))
+
+WebUI.click(findTestObject('button_CONTINUE (1)'))
+
+WebUI.click(findTestObject('button_Continue (2)'))
+
+WebUI.setText(findTestObject('input_address'), '123 Fake St')
+
+WebUI.setText(findTestObject('input_city'), 'Springfield')
+
+WebUI.setText(findTestObject('input_postalCode'), '33011')
+
+WebUI.selectOptionByValue(findTestObject('select_Select a country'), 'CA', true)
+
+WebUI.selectOptionByValue(findTestObject('select_Select a provincestateA (1)'), 'ON', true)
+
+WebUI.setText(findTestObject('input_creditNum'), '1234000056780000')
+
+WebUI.selectOptionByValue(findTestObject('select_Select... (1) (1)'), '96', true)
+
+WebUI.selectOptionByValue(findTestObject('select_01 (1)'), '04', true)
+
+WebUI.selectOptionByValue(findTestObject('select_2018 (1)'), '2022', true)
+
+WebUI.setText(findTestObject('input_csc (1)'), '123')
+
+WebUI.waitForElementClickable(findTestObject('button_Submit Order (1)'), 0)
+
+WebUI.click(findTestObject('button_Submit Order (1)'))
+
+WebUI.closeBrowser()
 
