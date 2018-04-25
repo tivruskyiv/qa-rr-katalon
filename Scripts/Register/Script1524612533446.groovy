@@ -55,3 +55,9 @@ WebUI.clearText(findTestObject('Page_Register for The Event Directo/input_regist
 
 WebUI.sendKeys(findTestObject('Page_Register for The Event Directo/input_registrant_manage_1-7953'), 'No')
 
+WebUI.selectOptionByLabel(findTestObject('Page_Register for The Event Directo/select_Sex'), 'Female', false)
+
+WebUI.selectOptionByLabel(findTestObject('Page_Register for The Event Directo/select_Swag'), 'L', false)
+
+WebUI.selectOptionByLabel(findTestObject('Page_Register for The Event Directo/select_Select quantity'), '3', false)
+
